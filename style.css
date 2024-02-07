@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 /*
 font-family: 'Oswald', sans-serif;
@@ -23,15 +25,18 @@ img {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .header {
   display: flex;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: #f5f5f5;
   padding: 80px 0;
+  background-image: url('Fondo_pantalla.jpg');
+  background-size: cover;
+  background-position: center;
 
 }
 
@@ -72,6 +77,7 @@ img {
   padding: 20px;
   color: #111;
   display: block;
+  font-weight: 500;
 }
 
 #menu {
@@ -129,10 +135,10 @@ td {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex: 1;
     padding: 0 200px;
+    justify-content: center;
 
 }
 
@@ -176,8 +182,23 @@ td {
     justify-content: space-between;
 }
 
+.oferta-titulo {
+  text-align: center;
+  padding: 35px;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  color: #111;
+}
+
+.tenis-exibicion{
+  padding: 20px;
+  font-size: 30px;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
 .ofert-1 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-basis: calc(33.3% - 15px);
     background-color: #F5F5F5;
@@ -191,6 +212,7 @@ td {
 
 .ofert-img img {
     width: 250px;
+    border-radius: 20px;
 }
 
 .ofert-txt{
@@ -267,29 +289,31 @@ gap: 50px;
 }
 
 .icons {
-  padding: 50px 0 100px 0;
+  width: 80%;
+  align-items: center;
+  padding: 50px 0 50px 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .icon-1 {
-  flex-basis: calc(33.3% - 30px);
+  
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 25px;
   background-color: #F5F5F5;
 }
 
 .icon-txt h3{
-  font-size: 20px;
+  font-size: 100px;
   color: #111;
-  font-family: 'Oswald' sans-serif;
-  text-transform: uppercase;
+  font-family: 'Dancing Script', cursive;
 }
 
 .icon-txt p {
-  font-size: 16px;
+  font-size: 25px;
   color: #111;
 }
 
@@ -327,6 +351,11 @@ gap: 50px;
 .footer {
   padding: 50px 0;
   background-color: #111;
+  text-align: center;
+}
+
+.link {
+  margin: 0 auto;
 }
 
 .footer-content {
@@ -334,12 +363,14 @@ gap: 50px;
   justify-content: space-between;
 }
 
-.link h3{
-  font-size: 16px;
+.link h3 {
+  font-size: 25px;
   color: #ffffff;
   font-family: 'Oswald' sans-serif;
-  text-transform: uppercase;
   margin-bottom: 20px;
+}
+.link h2 {
+  color: #FFFFFF;
 }
 
 .link a{
@@ -347,6 +378,11 @@ gap: 50px;
   color: #dcdcdc;
   display: block;
   margin-bottom: 10px;
+}
+
+.link img {
+  width: 30px;
+  height: 30px;
 }
 
 
